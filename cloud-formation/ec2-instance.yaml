@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: ami-05b10e08d247fb927
+      KeyName: MyKeyPair
+      Tags:
+        - Key: Name
+          Value: CloudFormation-EC2
